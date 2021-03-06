@@ -1,0 +1,24 @@
+
+//html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mb-1{
+    margin-bottom: 1rem;
+}
+
+.m-1{
+    margin: 0.5rem;
+}
+
+.btn-shadow{
+    box-shadow: 2px 2px 5px gray !important;
+}
+
+.botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

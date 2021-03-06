@@ -1,0 +1,36 @@
+<mat-toolbar color="primary">
+  <span>
+    <a [routerLink]="['/']" routerLinkActive="router-link-active"  mat-button>
+      <mat-icon class="mat-icon">
+        theaters
+      </mat-icon> Angular Peliculas
+    </a>
+  </span>
+
+  <div class="m-1">
+    <a mat-button [routerLink]="['/generos']" routerLinkActive="router-link-active" >Generos</a>
+  </div>
+
+  <div class="m-1">
+    <a mat-button [routerLink]="['/actores']" routerLinkActive="router-link-active" >Actores</a>
+
+  </div>
+
+  <div class="m-1">
+    <a mat-button [routerLink]="['/cines']" routerLinkActive="router-link-active" >Cines</a>
+
+  </div>
+  
+  <div class="m-1">
+    <a mat-button [routerLink]="['/peliculas']" routerLinkActive="router-link-active" >Peliculas</a>
+
+  </div>
+  
+  <div class="m-1">
+    <a mat-button [routerLink]="['/peliculas/search']" routerLinkActive="router-link-active" >
+      Buscar Peliculas
+      <mat-icon>search</mat-icon>
+    </a>
+    
+  </div>
+</mat-toolbar>

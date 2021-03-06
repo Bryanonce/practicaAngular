@@ -1,0 +1,20 @@
+.mat-form-field, .mat-flat-button{
+    min-width: 400px;
+}
+
+.simple-card-img{
+    max-width: 400px;
+}
+
+.edit-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-container form,
+.edit-container>div{
+    margin: 20px;
+}

@@ -1,0 +1,17 @@
+form{
+    width: 100%;
+}
+
+.mat-form-field{
+    width: 30%;
+}
+
+.check-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.check-container *{
+    margin: 0.5rem 0;
+}

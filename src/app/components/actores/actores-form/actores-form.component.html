@@ -1,0 +1,32 @@
+<div class="h-100 edit-container">
+    <form (submit)="saveChanges()" [formGroup]="form">
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Nombre</mat-label>
+                <input type="text" matInput formControlName="nombre" autocomplete="off">
+                <mat-error *ngIf="form.invalid">{{getNameErrors()}}</mat-error>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Fecha de Nacimiento</mat-label>
+                <input matInput formControlName="fecha_nac" [matDatepicker]="picker" autocomplete="off">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker [disabled]="false"></mat-datepicker>
+                <mat-error *ngIf="form.invalid">{{getFechaErrors()}}</mat-error>
+            </mat-form-field>
+        </div>
+    
+        <div class="mb-1">
+            <app-input-img (img)="pushImg($event)"></app-input-img>
+        </div>
+    
+        <div>
+            <button [disabled]="form.invalid" mat-flat-button color="primary">Guardar Cambios</button>
+        </div>
+    </form>
+    
+    <div *ngIf="imagen64">
+        <img class="simple-card-img" [src]="imagen64" alt="Imagen Impresa">
+    </div>
+</div>

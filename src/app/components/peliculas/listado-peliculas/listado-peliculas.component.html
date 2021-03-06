@@ -1,0 +1,27 @@
+<app-listado-generico [listado]="peliculas">
+  <ng-container cargando>
+    <img src="https://media.tenor.com/images/67d17766117cca8152040f688609472b/tenor.gif" alt="Loading" />
+  </ng-container>
+  <ng-container contenido>
+    <div class="peliculas-container">
+      <div class="peliculas" *ngFor="let pelicula of peliculas; let index = index">
+        <a href="">
+          <img [src]="pelicula.poster" alt="Poster">
+        </a>
+        <p>
+          <a>{{pelicula.titulo}}</a>
+        </p>
+        <div class="botonera">
+          <a mat-flat-button color="primary">
+            Editar
+          </a>
+          <button type="button" mat-flat-button color="warn">
+            Borrar
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </ng-container>
+</app-listado-generico>

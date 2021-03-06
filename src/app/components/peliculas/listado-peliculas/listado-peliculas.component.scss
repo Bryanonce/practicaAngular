@@ -1,0 +1,34 @@
+p{
+    color: red;
+}
+
+.peliculas{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+    min-width: 150px;
+}
+
+.peliculas-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.peliculas-container p{
+    max-width: 225px;
+    height: 44px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.peliculas-container p a{
+    text-decoration: none;
+}
+
+.botonera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
